@@ -1,0 +1,2 @@
+find / -user flag05 2>/dev/null
+setfacl -u level05:--x /rofs/usr/sbin/openarenaserver
