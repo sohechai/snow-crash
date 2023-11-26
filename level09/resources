@@ -1,0 +1,9 @@
+./level09 "aaaa"
+abcd
+
+on remarque que le script increment la lettre du nombre dans l'index 
+(table ascii)
+
+il suffit de developper un script qui fera la procedure inverse 
+
+./a.out `cat token`

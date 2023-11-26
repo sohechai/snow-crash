@@ -1,0 +1,3 @@
+la variable logname est print
+ il suffit de changer le logname en faisant :
+LOGNAME=`getflag`

