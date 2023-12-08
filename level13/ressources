@@ -1,0 +1,16 @@
+./level13
+uid attendu KO
+objdump -d level13
+on voit qu'il y a 2 possibilités de print 
+si on a le bon uid il print autre chose 
+en faisant :
+
+-gdb level13
+-break sur l'adresse memoire du compare :
+     804859a:	3d 92 10 00 00       	cmp    $0x1092,%eax
+-break *0x804859a
+-run
+-set $eax=4242
+-next
+
+le flag s'imprime
